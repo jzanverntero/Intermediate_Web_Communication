@@ -1,6 +1,11 @@
 :root {
-    --green: #4CAF50;
-    --whitesome: #f9f9f9;
+    --green-color: #4CAF50;
+    --bg-color: #f9f9f9;
+}
+
+*,* ::before, *::after {
+    margin:0;
+    padding;0;
 }
 
 body {
@@ -8,13 +13,45 @@ body {
 }
 
 header {
-    padding: 20px 10px;
-    background-color: var(--whitesome);
+    padding: 15px;
+    display: flex;
+    /*border: 1px solid black; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    color: var(--green-color);
 
+}
+
+header > div {
+    /*border: 1px solid red; */
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 900;
 }
 
 .flex-container{
     display: flex;
     justify-content: center;
 }
+
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+button {
+    background-color: var(--bg-color)
+    border: none;
+    color: var(--green-color);
+
+}
+
+
+
+
 
